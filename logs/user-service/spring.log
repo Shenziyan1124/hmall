@@ -1,0 +1,39 @@
+22:05:01:047  INFO 21596 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 17.0.18 on DESKTOP-U7FJ1LB with PID 21596 (E:\BaiduNetdiskDownload\day03-微服务01\hmall\user-service\target\classes started by 13383 in E:\BaiduNetdiskDownload\day03-微服务01\hmall)
+22:05:01:076 DEBUG 21596 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+22:05:01:076  INFO 21596 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+22:05:02:016  INFO 21596 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=87b48a6f-38f5-3889-bd64-be1512fe5413
+22:05:02:425  INFO 21596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+22:05:02:434  INFO 21596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:05:02:434  INFO 21596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+22:05:02:559  INFO 21596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:05:02:559  INFO 21596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1426 ms
+22:05:05:034  INFO 21596 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+22:05:05:059  INFO 21596 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:05:06:230  INFO 21596 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+22:05:06:513  INFO 21596 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 8f0f6003-3c90-46a1-841b-ce260bdf277a
+22:05:06:570  INFO 21596 --- [main] org.reflections.Reflections              : Reflections took 28 ms to scan 1 urls, producing 3 keys and 6 values 
+22:05:06:603  INFO 21596 --- [main] org.reflections.Reflections              : Reflections took 19 ms to scan 1 urls, producing 4 keys and 9 values 
+22:05:06:612  INFO 21596 --- [main] org.reflections.Reflections              : Reflections took 7 ms to scan 1 urls, producing 3 keys and 10 values 
+22:05:06:613  WARN 21596 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+22:05:06:621  INFO 21596 --- [main] org.reflections.Reflections              : Reflections took 7 ms to scan 1 urls, producing 1 keys and 5 values 
+22:05:06:629  INFO 21596 --- [main] org.reflections.Reflections              : Reflections took 7 ms to scan 1 urls, producing 1 keys and 7 values 
+22:05:06:639  INFO 21596 --- [main] org.reflections.Reflections              : Reflections took 7 ms to scan 1 urls, producing 2 keys and 8 values 
+22:05:06:641  WARN 21596 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+22:05:06:643  INFO 21596 --- [main] com.alibaba.nacos.common.remote.client   : [8f0f6003-3c90-46a1-841b-ce260bdf277a] RpcClient init label, labels = {module=naming, source=sdk}
+22:05:06:644  INFO 21596 --- [main] com.alibaba.nacos.common.remote.client   : [8f0f6003-3c90-46a1-841b-ce260bdf277a] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+22:05:06:645  INFO 21596 --- [main] com.alibaba.nacos.common.remote.client   : [8f0f6003-3c90-46a1-841b-ce260bdf277a] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+22:05:06:645  INFO 21596 --- [main] com.alibaba.nacos.common.remote.client   : [8f0f6003-3c90-46a1-841b-ce260bdf277a] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+22:05:06:647  INFO 21596 --- [main] com.alibaba.nacos.common.remote.client   : [8f0f6003-3c90-46a1-841b-ce260bdf277a] Try to connect to server on start up, server: {serverIp = '192.168.31.188', server main port = 8848}
+22:05:07:494  INFO 21596 --- [main] com.alibaba.nacos.common.remote.client   : [8f0f6003-3c90-46a1-841b-ce260bdf277a] Success to connect to server [192.168.31.188:8848] on start up, connectionId = 1780409106986_192.168.31.70_62259
+22:05:07:496  INFO 21596 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [8f0f6003-3c90-46a1-841b-ce260bdf277a] Notify connected event to listeners.
+22:05:07:496  INFO 21596 --- [main] com.alibaba.nacos.common.remote.client   : [8f0f6003-3c90-46a1-841b-ce260bdf277a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+22:05:07:497  INFO 21596 --- [main] com.alibaba.nacos.common.remote.client   : [8f0f6003-3c90-46a1-841b-ce260bdf277a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1018/0x00000207d3867b78
+22:05:07:564  INFO 21596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+22:05:07:572  INFO 21596 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.192.1:8083 register finished
+22:05:08:062  INFO 21596 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [8f0f6003-3c90-46a1-841b-ce260bdf277a] Receive server push request, request = NotifySubscriberRequest, requestId = 4
+22:05:08:081  INFO 21596 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [8f0f6003-3c90-46a1-841b-ce260bdf277a] Ack server push request, request = NotifySubscriberRequest, requestId = 4
+22:05:08:692  INFO 21596 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+22:05:08:693  INFO 21596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+22:05:08:702  INFO 21596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+22:05:08:737  INFO 21596 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+22:05:08:820  INFO 21596 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 9.421 seconds (JVM running for 12.257)
