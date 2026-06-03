@@ -1,6 +1,10 @@
+NEW_FILE_CODE
 # Maven
 target/
-!.mvn/wrapper/maven-wrapper.jar
+*.jar
+*.war
+*.ear
+*.class
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -18,16 +22,50 @@ buildNumber.properties
 .classpath
 .project
 .factorypath
+*.swp
+*.swo
+*~
 
-# 日志
+# 日志文件
 logs/
 *.log
 
 # 临时文件
 *.tmp
-*.swp
+*.bak
 .DS_Store
+Thumbs.db
 
-# 敏感配置文件(可选)
+# JKS密钥文件(敏感信息)
+**/*.jks
+**/*.keystore
+
+# 本地配置文件(包含敏感信息)
 **/application-local.yaml
+**/application-local.yml
 **/.env
+
+# Git
+.git/
+.gitignore
+
+# 文档(可选)
+*.pdf
+*.doc
+*.docx
+
+# 测试覆盖率
+coverage/
+*.exec
+jacoco/
+
+# Node modules (如果有前端)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Maven wrapper
+!mvnw
+!mvnw.cmd
+!.mvn/wrapper/maven-wrapper.jar
+</file>
