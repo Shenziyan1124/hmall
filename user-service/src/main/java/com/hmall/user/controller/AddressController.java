@@ -39,9 +39,9 @@ public class AddressController {
     public AddressDTO findAddressById(@ApiParam("地址id") @PathVariable("addressId") Long id) {
         // 1.根据id查询
         Address address = addressService.getById(id);
-        // 2.判断当前用户 TODO
-        // Long userId = UserContext.getUser();
-        Long userId = 1L;
+        // 2.判断当前用户
+         Long userId = UserContext.getUser();
+//        Long userId = 1L;
         if(!address.getUserId().equals(userId)){
             throw new BadRequestException("地址不属于当前登录用户");
         }
@@ -50,9 +50,9 @@ public class AddressController {
     @ApiOperation("查询当前用户地址列表")
     @GetMapping
     public List<AddressDTO> findMyAddresses() {
-        // 1.查询列表 TODO
-        List<Address> list = addressService.query().eq("user_id", 1L).list();
-        // List<Address> list = addressService.query().eq("user_id", UserContext.getUser()).list();
+        // 1.查询列表
+//        List<Address> list = addressService.query().eq("user_id", 1L).list();
+         List<Address> list = addressService.query().eq("user_id", UserContext.getUser()).list();
         // 2.判空
         if (CollUtils.isEmpty(list)) {
             return CollUtils.emptyList();
