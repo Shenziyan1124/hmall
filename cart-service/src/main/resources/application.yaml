@@ -1,9 +1,14 @@
 server:
   port: 8082
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090
+      http-method-specify: true
 feign:
   okhttp:
     enabled: true # 开启OKHttp功能
-
 hm:
   db:
     database: hm-cart # 数据库名称
