@@ -9,6 +9,8 @@ spring:
 feign:
   okhttp:
     enabled: true # 开启OKHttp功能
+  sentinel:
+    enabled: true
 hm:
   db:
     database: hm-cart # 数据库名称
