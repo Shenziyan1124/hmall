@@ -6,7 +6,7 @@ hm:
   swagger:
     title: "黑马商城商品服务"
     desc: "黑马商城商品服务"
-    package: com.hm.item.controller
+    package: com.hmall.item.controller
 
 
 

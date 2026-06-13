@@ -9,4 +9,4 @@ hm:
   swagger:
     title: "黑马商城交易服务"
     desc: "黑马商城交易服务"
-    package: com.hm.trade.controller
+    package: com.hmall.trade.controller

@@ -17,4 +17,4 @@ hm:
   swagger:
     title: "黑马商城购物车服务"
     desc: "黑马商城购物车服务"
-    package: com.hm.cart.controller
+    package: com.hmall.cart.controller
