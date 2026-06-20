@@ -23,7 +23,9 @@ public class DefaultFeignConfig {
             @Override
             public void apply(RequestTemplate requestTemplate) {
                 Long user = UserContext.getUser();
-                requestTemplate.header("user-info", user.toString());
+                if (user != null) {
+                    requestTemplate.header("user-info", user.toString());
+                }
             }
         };
     }

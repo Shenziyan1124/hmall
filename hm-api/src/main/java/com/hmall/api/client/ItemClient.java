@@ -18,8 +18,14 @@ public interface ItemClient {
     List<ItemDTO> queryItemByIds(@RequestParam("ids") Collection<Long> ids);
 
 
+    // 扣减库存
     @PutMapping("/items/stock/deduct")
 //    void deductStock(@RequestParam("items") List<com.hmall.trade.domain.dto.OrderDetailDTO> items);
     void deductStock(@RequestBody List<OrderDetailDTO> items);
+
+
+    // 恢复库存
+    @PutMapping("/items/stock/restore")
+    void restoreStock(@RequestParam("items") List<OrderDetailDTO> items);
 
 }
